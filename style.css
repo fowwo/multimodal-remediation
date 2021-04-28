@@ -13,9 +13,11 @@ div {
 	flex-direction: column;
 }
 #navtop {
+	flex-shrink: 0;
 	height: 70px;
 }
 #navbottom {
+	flex-shrink: 0;
 	height: 50px;
 }
 #container {
