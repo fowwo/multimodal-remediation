@@ -25,3 +25,9 @@ div {
 	justify-content: center;
 	flex-grow: 1;
 }
+#results {
+	box-sizing: border-box;
+	height: 100%;
+	max-width: 900px;
+	padding: 10px;
+}
