@@ -31,3 +31,34 @@ div {
 	max-width: 900px;
 	padding: 10px;
 }
+.result-item {
+	display: flex;
+	margin-top: 10px;
+	height: 150px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.result-item-icon-container {
+	flex-shrink: 0;
+	width: 150px;
+	height: 150px;
+}
+.result-item-text-container {
+	box-sizing: border-box;
+	padding: 10px;
+	height: 150px;
+	flex-grow: 1;
+}
+.result-item-name {
+	font-size: 25px;
+	line-height: 25px;
+}
+.result-item-rating {
+	font-size: 30px;
+	line-height: 30px;
+}
+.result-item-price {
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 3px;
+}
