@@ -17,6 +17,9 @@ div {
 	height: 70px;
 }
 #navbottom {
+	box-sizing: border-box;
+	display: flex;
+	padding: 18px;
 	flex-shrink: 0;
 	height: 50px;
 }
@@ -25,6 +28,30 @@ div {
 	justify-content: center;
 	flex-grow: 1;
 }
+
+/* ------------------------------------------------------ */
+
+div.fake-text {
+	height: 100%;
+	border-radius: 100px;
+	background-color: white;
+	margin: auto 0;
+}
+div.fake-text + div.fake-text {
+	margin-left: 10px;
+}
+
+/* I don't know a better way to do this but if it works, then it works. */
+@media (max-width: 586px) { #fake-text4 { display: none; } }
+@media (max-width: 726px) { #fake-text5 { display: none; } }
+@media (max-width: 866px) { #fake-text6 { display: none; } }
+@media (max-width: 1006px) { #fake-text7 { display: none; } }
+@media (max-width: 1146px) { #fake-text8 { display: none; } }
+@media (max-width: 1286px) { #fake-text9 { display: none; } }
+@media (max-width: 1426px) { #fake-text10 { display: none; } }
+
+/* ------------------------------------------------------ */
+
 #results {
 	box-sizing: border-box;
 	height: 100%;
