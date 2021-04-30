@@ -15,7 +15,10 @@ div {
 }
 #navtop {
 	background-color: #357;
+	box-sizing: border-box;
+	display: flex;
 	flex-shrink: 0;
+	padding: 10px;
 	height: 70px;
 }
 #navbottom {
@@ -30,6 +33,25 @@ div {
 	display: flex;
 	justify-content: center;
 	flex-grow: 1;
+}
+
+/* ------------------------------------------------------ */
+
+#logo-container {
+	width: 50px;
+	height: 50px;
+	flex-shrink: 0;
+}
+#logo-top {
+	height: 37px;
+	margin-bottom: 3px;
+	background-color: white;
+	border-radius: 3px;
+}
+#logo-bottom {
+	height: 10px;
+	background-color: #0fa;
+	border-radius: 3px;
 }
 
 /* ------------------------------------------------------ */
