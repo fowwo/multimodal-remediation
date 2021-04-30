@@ -58,9 +58,15 @@ div {
 	border-radius: 3px;
 }
 
-#search-bar {
+#search-bar-container {
 	display: flex;
 	margin: 5px 0;
+	justify-content: center;
+}
+#search-bar {
+	display: flex;
+	max-width: 750px;
+	height: 100%;
 	border-radius: 10px;
 	overflow: hidden;
 }
