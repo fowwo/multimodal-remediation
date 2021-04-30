@@ -71,9 +71,14 @@ div {
 	overflow: hidden;
 }
 #search-filter {
+	display: flex;
 	flex-shrink: 0;
+	padding-right: 8px;
+	box-sizing: border-box;
 	width: 100px;
 	height: 100%;
+	align-items: center;
+	justify-content: flex-end;
 	background-color: #57a;
 }
 #search-input {
