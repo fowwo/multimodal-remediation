@@ -163,18 +163,18 @@ div.fake-text + div.fake-text {
 	display: flex;
 	margin-top: 10px;
 	padding: 0;
-	height: 150px;
+	height: 130px;
 	border-radius: 15px;
 }
 .result-item-icon-container {
 	flex-shrink: 0;
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 }
 .result-item-text-container {
 	box-sizing: border-box;
 	padding: 10px;
-	max-width: calc(100% - 150px);
+	max-width: calc(100% - 130px);
 	flex-grow: 1;
 }
 .result-item-name {
