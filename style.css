@@ -174,12 +174,16 @@ div.fake-text + div.fake-text {
 .result-item-text-container {
 	box-sizing: border-box;
 	padding: 10px;
-	height: 150px;
+	max-width: calc(100% - 150px);
 	flex-grow: 1;
 }
 .result-item-name {
+	margin: -5px 0;
 	font-size: 25px;
-	line-height: 25px;
+	line-height: 35px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .result-item-rating {
 	font-size: 30px;
@@ -189,7 +193,16 @@ div.fake-text + div.fake-text {
 .result-item-price {
 	font-size: 30px;
 	line-height: 30px;
-	margin-bottom: 3px;
+	margin: 2px 0 3px 0;
+}
+.result-item-description {
+	margin: -5px 0;
+	font-size: 20px;
+	line-height: 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	opacity: 75%;
 }
 
 /* ------------------------------------------------------ */
