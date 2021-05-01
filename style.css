@@ -127,7 +127,7 @@ div {
 div.fake-text {
 	height: 100%;
 	border-radius: 100px;
-	background-color: white;
+	background-color: var(--theme-light);
 	margin: auto 0;
 }
 div.fake-text + div.fake-text {
