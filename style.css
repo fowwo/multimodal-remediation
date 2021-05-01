@@ -149,6 +149,7 @@ div.fake-text + div.fake-text {
 	box-sizing: border-box;
 	max-width: 900px;
 	padding: 10px;
+	transition: filter 100ms ease-in-out;
 }
 .result-item {
 	display: flex;

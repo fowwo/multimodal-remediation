@@ -7,8 +7,14 @@ var activeScreen = document.getElementById("results");
 function switchScreen(screen) {
 	let e = document.getElementById(screen);
 	if (e) {
-		activeScreen.style.display = "none";
-		activeScreen = e;
-		activeScreen.style.display = "block";
+		activeScreen.style.filter = "opacity(0%)";
+		setTimeout(() => {
+			activeScreen.style.display = "none";
+			e.style.display = "block";
+			setTimeout(() => {
+				e.style.filter = "opacity(100%)";
+				activeScreen = e;
+			}, 50); // Allows for the screen to fade in
+		}, 100);
 	}
 }
