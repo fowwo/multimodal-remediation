@@ -145,9 +145,8 @@ div.fake-text + div.fake-text {
 
 /* ------------------------------------------------------ */
 
-#results {
+.screen {
 	box-sizing: border-box;
-	height: 100%;
 	max-width: 900px;
 	padding: 10px;
 }
