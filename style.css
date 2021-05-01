@@ -178,6 +178,7 @@ div.fake-text + div.fake-text {
 .result-item-rating {
 	font-size: 30px;
 	line-height: 30px;
+	text-shadow: 0px 2px 3px #0006;
 }
 .result-item-price {
 	font-size: 30px;
