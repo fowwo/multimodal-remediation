@@ -185,3 +185,17 @@ div.fake-text + div.fake-text {
 	line-height: 30px;
 	margin-bottom: 3px;
 }
+
+/* ------------------------------------------------------ */
+
+.back-button {
+	position: relative;
+	left: -5px;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: color 100ms ease-in;
+}
+.back-button:hover {
+	color: #000;
+}
