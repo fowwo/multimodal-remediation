@@ -165,6 +165,15 @@ div.fake-text + div.fake-text {
 	padding: 0;
 	height: 130px;
 	border-radius: 15px;
+	cursor: pointer;
+	transition-property: background-color, box-shadow, color;
+	transition-duration: 150ms;
+	transition-timing-function: ease;
+}
+.result-item:hover {
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 0 10px #0005;
 }
 .result-item-icon-container {
 	flex-shrink: 0;
@@ -204,7 +213,9 @@ div.fake-text + div.fake-text {
 	transform: rotate(90deg);
 	filter: brightness(0.3);
 	top: -4px;
+	transition: filter 150ms ease;
 }
+.result-item:hover .result-item-rating img { filter: brightness(0); }
 .result-item-price {
 	font-size: 30px;
 	line-height: 30px;
