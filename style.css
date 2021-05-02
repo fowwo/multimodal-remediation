@@ -188,7 +188,22 @@ div.fake-text + div.fake-text {
 .result-item-rating {
 	font-size: 30px;
 	line-height: 30px;
+	vertical-align: -2.5px;
+	display: inline;
+}
+.result-item-rating span {
+	color: gold;
+	text-shadow: 0px 2px 3px #f80;
+}
+.result-item-rating span + span {
+	color: inherit;
 	text-shadow: 0px 2px 3px #0006;
+}
+.result-item-rating img {
+	position: relative;
+	transform: rotate(90deg);
+	filter: brightness(0.3);
+	top: -4px;
 }
 .result-item-price {
 	font-size: 30px;
