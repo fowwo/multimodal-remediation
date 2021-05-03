@@ -247,5 +247,5 @@ div.fake-text + div.fake-text {
 	transition: color 100ms ease-in;
 }
 .back-button:hover {
-	color: #000;
+	color: var(--theme-light);
 }
