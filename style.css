@@ -287,3 +287,34 @@ iframe {
 	position: relative;
 	z-index: -1;
 }
+.rating-range {
+	display: flex;
+	text-align: center;
+}
+.rating-label {
+	box-sizing: border-box;
+	width: 30px;
+	flex-shrink: 0;
+}
+.rating-bar {
+	display: flex;
+	box-sizing: border-box;
+	margin: 2px;
+	border-radius: 5px;
+	box-shadow: 0 0 3px #0002;
+	overflow: hidden;
+}
+.rating-bar > div {
+	background-color: gold;
+	box-shadow: 0 -15px 15px -15px inset #f80, 0 5px 5px -5px inset #fff;
+	flex-shrink: 0;
+}
+.rating-bar > div + div {
+	background-color: #ddd;
+	box-shadow: 0 2px 5px inset #0002;
+}
+.rating-percentage {
+	box-sizing: border-box;
+	width: 35px;
+	flex-shrink: 0;
+}
