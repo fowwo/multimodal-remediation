@@ -30,6 +30,7 @@ div {
 	cursor: pointer;
 	transition: background-color 100ms ease;
 	text-align: center;
+	user-select: none;
 }
 .button:hover {
 	background-color: var(--theme-bright);
