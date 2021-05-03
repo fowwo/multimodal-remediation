@@ -287,6 +287,27 @@ iframe {
 	position: relative;
 	z-index: -1;
 }
+.price-panel .button {
+	color: #fff;
+	border-radius: 10px;
+	padding: 3px;
+	margin-top: 5px;
+	box-shadow: 0 2px 4px -2px #000;
+}
+.price-panel-text {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 3px;
+}
+.in-stock {
+	color: #070;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+.add-to-cart { background-color: #5b5; }
+.ignore-item { background-color: #c55; }
+.rating-range-container { margin-top: 5px; }
 .rating-range {
 	display: flex;
 	text-align: center;
