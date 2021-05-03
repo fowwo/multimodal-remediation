@@ -29,6 +29,7 @@ div {
 	background-color: var(--theme-light);
 	cursor: pointer;
 	transition: background-color 100ms ease;
+	text-align: center;
 }
 .button:hover {
 	background-color: var(--theme-bright);
