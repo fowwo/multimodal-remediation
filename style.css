@@ -244,6 +244,24 @@ div.fake-text + div.fake-text {
 
 /* ------------------------------------------------------ */
 
+@media (max-width: 799px) { 
+	.preview-info-container { 
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.price-panel { margin-top: 5px; }
+}
+@media (min-width: 800px) { 
+	.preview-info-container { margin-bottom: 5px; } 
+	.price-panel {
+		margin-left: 10px;
+		margin-bottom: 5px;
+	}
+}
+iframe {
+	border-radius: 10px;
+}
 .back-button {
 	position: relative;
 	left: -5px;
@@ -254,4 +272,15 @@ div.fake-text + div.fake-text {
 }
 .back-button:hover {
 	color: var(--theme-light);
+}
+.preview-info-container {
+	display: flex;
+	margin-top: 5px;
+}
+.video-container {
+	width: auto;
+}
+.item-name {
+	position: relative;
+	z-index: -1;
 }
