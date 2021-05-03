@@ -3,7 +3,6 @@
 	--theme-dark: #253d55;
 	--theme-light: #57a;
 	--theme-accent: #0fa;
-	--theme-bright: #96b5d8;
 }
 body {
 	margin: 0;
@@ -28,12 +27,12 @@ div {
 	box-sizing: border-box;
 	background-color: var(--theme-light);
 	cursor: pointer;
-	transition: background-color 100ms ease;
+	transition: filter 100ms ease;
 	text-align: center;
 	user-select: none;
 }
 .button:hover {
-	background-color: var(--theme-bright);
+	filter: brightness(1.25);
 }
 .box {
 	box-sizing: border-box;
