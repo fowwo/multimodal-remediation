@@ -199,6 +199,7 @@ div.fake-text + div.fake-text {
 	margin: -5px 0;
 	font-size: 25px;
 	line-height: 35px;
+	font-weight: bold;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
