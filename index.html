@@ -10,83 +10,81 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div>
-			<div id="navtop">
-				<div id="logo-container">
-					<div id="logo-top"></div>
-					<div id="logo-bottom"></div>
-				</div>
-				<div id="search-bar-container">
-					<div id="search-bar">
-						<div id="search-filter" class="button">
-							<img src="Images/arrow.svg" height="40%" style="transform: rotate(90deg)">
-						</div>
-						<div id="search-input"></div>
-						<div id="search-button" class="button">
-							<img src="Images/search.svg" width="50%">
-						</div>
+		<div id="navtop">
+			<div id="logo-container">
+				<div id="logo-top"></div>
+				<div id="logo-bottom"></div>
+			</div>
+			<div id="search-bar-container">
+				<div id="search-bar">
+					<div id="search-filter" class="button">
+						<img src="Images/arrow.svg" height="40%" style="transform: rotate(90deg)">
 					</div>
-				</div>
-				<div id="shopping-cart" class="button">
-					<img src="Images/cart.svg" width="75%">
-				</div>
-				<div id="profile" class="button">
-					<img src="Images/user.svg" width="60%">
+					<div id="search-input"></div>
+					<div id="search-button" class="button">
+						<img src="Images/search.svg" width="50%">
+					</div>
 				</div>
 			</div>
-			<div id="navbottom">
-				<div class="fake-text"></div>
-				<div class="fake-text"></div>
-				<div class="fake-text"></div>
-				<div class="fake-text"></div>
-				<div class="fake-text" id="fake-text4"></div>
-				<div class="fake-text" id="fake-text5"></div>
-				<div class="fake-text" id="fake-text6"></div>
-				<div class="fake-text" id="fake-text7"></div>
-				<div class="fake-text" id="fake-text8"></div>
-				<div class="fake-text" id="fake-text9"></div>
-				<div class="fake-text" id="fake-text10"></div>
+			<div id="shopping-cart" class="button">
+				<img src="Images/cart.svg" width="75%">
 			</div>
-			<div id="container">
-				<div id="results" class="screen">
-					<div id="results-count"></div>
-					<div class="box result-item" onclick="switchScreen('screen0')">
-						<div class="result-item-icon-container"></div>
-						<div class="result-item-text-container">
-							<div class="result-item-name"></div>
-							<div class="result-item-rating"></div>
-							<div class="result-item-price"></div>
-							<div class="result-item-description"></div>
-						</div>
-					</div>
-					<div class="box result-item" onclick="switchScreen('screen1')">
-						<div class="result-item-icon-container"></div>
-						<div class="result-item-text-container">
-							<div class="result-item-name"></div>
-							<div class="result-item-rating"></div>
-							<div class="result-item-price"></div>
-							<div class="result-item-description"></div>
-						</div>
-					</div>
-					<div class="box result-item" onclick="switchScreen('screen2')">
-						<div class="result-item-icon-container"></div>
-						<div class="result-item-text-container">
-							<div class="result-item-name"></div>
-							<div class="result-item-rating"></div>
-							<div class="result-item-price"></div>
-							<div class="result-item-description"></div>
-						</div>
+			<div id="profile" class="button">
+				<img src="Images/user.svg" width="60%">
+			</div>
+		</div>
+		<div id="navbottom">
+			<div class="fake-text"></div>
+			<div class="fake-text"></div>
+			<div class="fake-text"></div>
+			<div class="fake-text"></div>
+			<div class="fake-text" id="fake-text4"></div>
+			<div class="fake-text" id="fake-text5"></div>
+			<div class="fake-text" id="fake-text6"></div>
+			<div class="fake-text" id="fake-text7"></div>
+			<div class="fake-text" id="fake-text8"></div>
+			<div class="fake-text" id="fake-text9"></div>
+			<div class="fake-text" id="fake-text10"></div>
+		</div>
+		<div id="container">
+			<div id="results" class="screen">
+				<div id="results-count"></div>
+				<div class="box result-item" onclick="switchScreen('screen0')">
+					<div class="result-item-icon-container"></div>
+					<div class="result-item-text-container">
+						<div class="result-item-name"></div>
+						<div class="result-item-rating"></div>
+						<div class="result-item-price"></div>
+						<div class="result-item-description"></div>
 					</div>
 				</div>
-				<div id="screen0" class="screen" style="display: none; filter: opacity(0%);">
-					<span class="back-button" onclick="switchScreen('results')">< Back</span>
+				<div class="box result-item" onclick="switchScreen('screen1')">
+					<div class="result-item-icon-container"></div>
+					<div class="result-item-text-container">
+						<div class="result-item-name"></div>
+						<div class="result-item-rating"></div>
+						<div class="result-item-price"></div>
+						<div class="result-item-description"></div>
+					</div>
 				</div>
-				<div id="screen1" class="screen" style="display: none; filter: opacity(0%);">
-					<span class="back-button" onclick="switchScreen('results')">< Back</span>
+				<div class="box result-item" onclick="switchScreen('screen2')">
+					<div class="result-item-icon-container"></div>
+					<div class="result-item-text-container">
+						<div class="result-item-name"></div>
+						<div class="result-item-rating"></div>
+						<div class="result-item-price"></div>
+						<div class="result-item-description"></div>
+					</div>
 				</div>
-				<div id="screen2" class="screen" style="display: none; filter: opacity(0%);">
-					<span class="back-button" onclick="switchScreen('results')">< Back</span>
-				</div>
+			</div>
+			<div id="screen0" class="screen" style="display: none; filter: opacity(0%);">
+				<span class="back-button" onclick="switchScreen('results')">< Back</span>
+			</div>
+			<div id="screen1" class="screen" style="display: none; filter: opacity(0%);">
+				<span class="back-button" onclick="switchScreen('results')">< Back</span>
+			</div>
+			<div id="screen2" class="screen" style="display: none; filter: opacity(0%);">
+				<span class="back-button" onclick="switchScreen('results')">< Back</span>
 			</div>
 		</div>
 		<script src="index.js"></script>
