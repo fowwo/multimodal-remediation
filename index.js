@@ -7,6 +7,7 @@ var cart = {
 	butter: -1
 };
 let cartActive = false;
+var ended = false;
 
 /**
  * Switches the active screen.
@@ -147,7 +148,9 @@ function checkoutReady() {
 	proceed.onclick = () => {
 		switchScreen("screen-end");
 		toggleCart();
+		document.getElementById("shopping-cart").classList.remove("ready");
+		ended = true;
 	};
 	document.getElementById("proceed-message").style.display = "none";
-	document.getElementById("shopping-cart").classList.add("ready");
+	if(!ended) document.getElementById("shopping-cart").classList.add("ready");
 }
