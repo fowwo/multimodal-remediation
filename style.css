@@ -150,6 +150,15 @@ hr {
 	border-radius: 10px;
 	justify-content: center;
 }
+#shopping-cart.ready {
+	animation: checkoutReady infinite alternate 500ms ease;
+}
+@keyframes checkoutReady {
+	100% {
+		background-color: #fb0;
+		box-shadow: 0 0 10px #fb0;
+	}
+}
 
 /* ------------------------------------------------------ */
 

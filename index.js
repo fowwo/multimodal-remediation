@@ -149,4 +149,5 @@ function checkoutReady() {
 		toggleCart();
 	};
 	document.getElementById("proceed-message").style.display = "none";
+	document.getElementById("shopping-cart").classList.add("ready");
 }
