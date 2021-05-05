@@ -49,7 +49,7 @@
 		<div id="container">
 			<div id="results" class="screen">
 				<div id="results-count">Found <span style="color: var(--theme-light); font-weight: bold;">5</span> totally awesome items that you should definitely buy.</div>
-				<div class="box result-item" onclick="switchScreen('screen-fushigi')">
+				<div id="fushigi-listing" class="box result-item" onclick="switchScreen('screen-fushigi')">
 					<div class="result-item-icon-container"></div>
 					<div class="result-item-text-container">
 						<div class="result-item-name">Fushigi Magic Gravity Ball</div>
@@ -64,7 +64,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="box result-item" onclick="switchScreen('screen-tracy')">
+				<div id="tracy-listing" class="box result-item" onclick="switchScreen('screen-tracy')">
 					<div class="result-item-icon-container"></div>
 					<div class="result-item-text-container">
 						<div class="result-item-name">Tracy Jordan Meat Machine</div>
@@ -80,7 +80,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="box result-item" onclick="switchScreen('screen-nivea')">
+				<div id="nivea-listing" class="box result-item" onclick="switchScreen('screen-nivea')">
 					<div class="result-item-icon-container"></div>
 					<div class="result-item-text-container">
 						<div class="result-item-name">NIVEA My Silhouette! Redefining Gel-Cream</div>
@@ -95,7 +95,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="box result-item" onclick="switchScreen('screen-frosted')">
+				<div id="frosted-listing" class="box result-item" onclick="switchScreen('screen-frosted')">
 					<div class="result-item-icon-container"></div>
 					<div class="result-item-text-container">
 						<div class="result-item-name">Kellogg's Frosted Mini-Wheats Bite Size</div>
@@ -110,7 +110,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="box result-item" onclick="switchScreen('screen-butter')">
+				<div id="butter-listing" class="box result-item" onclick="switchScreen('screen-butter')">
 					<div class="result-item-icon-container"></div>
 					<div class="result-item-text-container">
 						<div class="result-item-name">EZ Butter</div>
@@ -139,14 +139,14 @@
 					<div class="video-container">
 						<iframe width="480" height="360" src="https://www.youtube.com/embed/myIR__htBgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="box price-panel">
+					<div id="fushigi-panel" class="box price-panel">
 						<h1 class="item-price">$19.99</h1>
 						<div class="price-panel-text">
 							<div class="in-stock">In Stock</div>
 							<div>Free delivery.</div>
 						</div>
-						<div class="button add-to-cart"><b>+</b> Add to Cart</div>
-						<div class="button ignore-item"><b>X</b> Ignore Item</div>
+						<div id="fushigi-add" class="button add-to-cart" onclick="buyItem('fushigi')"><b>+</b> Add to Cart</div>
+						<div id="fushigi-ignore" class="button ignore-item" onclick="ignoreItem('fushigi')"><b>X</b> Ignore Item</div>
 						<div class="rating-range-container">
 							<b>2.9 / 5</b> from 337 ratings:
 							<div class="rating-range">
@@ -215,14 +215,14 @@
 					<div class="video-container">
 						<iframe width="480" height="360" src="https://www.youtube.com/embed/krzcOIyke7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="box price-panel">
+					<div id="tracy-panel" class="box price-panel">
 						<h1 class="item-price">$79.99</h1>
 						<div class="price-panel-text">
 							<div class="in-stock">In Stock</div>
 							<div>Free delivery.</div>
 						</div>
-						<div class="button add-to-cart"><b>+</b> Add to Cart</div>
-						<div class="button ignore-item"><b>X</b> Ignore Item</div>
+						<div id="tracy-add" class="button add-to-cart" onclick="buyItem('tracy')"><b>+</b> Add to Cart</div>
+						<div id="tracy-ignore" class="button ignore-item" onclick="ignoreItem('tracy')"><b>X</b> Ignore Item</div>
 						<div class="rating-range-container">
 							<b>4.2 / 5</b> from 243 ratings:
 							<div class="rating-range">
@@ -284,14 +284,14 @@
 					<div class="video-container">
 						<iframe width="480" height="360" src="https://www.youtube.com/embed/O60nvfr3YJU?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="box price-panel">
+					<div id="nivea-panel" class="box price-panel">
 						<h1 class="item-price">$12.97</h1>
 						<div class="price-panel-text">
 							<div class="in-stock">In Stock</div>
 							<div>Free delivery.</div>
 						</div>
-						<div class="button add-to-cart"><b>+</b> Add to Cart</div>
-						<div class="button ignore-item"><b>X</b> Ignore Item</div>
+						<div id="nivea-add" class="button add-to-cart" onclick="buyItem('nivea')"><b>+</b> Add to Cart</div>
+						<div id="nivea-ignore" class="button ignore-item" onclick="ignoreItem('nivea')"><b>X</b> Ignore Item</div>
 						<div class="rating-range-container">
 							<b>3.1 / 5</b> from 166 ratings:
 							<div class="rating-range">
@@ -354,14 +354,14 @@
 					<div class="video-container">
 						<iframe width="480" height="360" src="https://www.youtube.com/embed/uXQKM7gxxo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="box price-panel">
+					<div id="frosted-panel" class="box price-panel">
 						<h1 class="item-price">$2.88</h1>
 						<div class="price-panel-text">
 							<div class="in-stock">In Stock</div>
 							<div>Free delivery.</div>
 						</div>
-						<div class="button add-to-cart"><b>+</b> Add to Cart</div>
-						<div class="button ignore-item"><b>X</b> Ignore Item</div>
+						<div id="frosted-add" class="button add-to-cart" onclick="buyItem('frosted')"><b>+</b> Add to Cart</div>
+						<div id="frosted-ignore" class="button ignore-item" onclick="ignoreItem('frosted')"><b>X</b> Ignore Item</div>
 						<div class="rating-range-container">
 							<b>4.8 / 5</b> from 547 ratings:
 							<div class="rating-range">
@@ -428,14 +428,14 @@
 					<div class="video-container">
 						<iframe width="480" height="360" src="https://www.youtube.com/embed/JMHbAZ1E1iE?start=2&end=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="box price-panel">
+					<div id="butter-panel" class="box price-panel">
 						<h1 class="item-price">$10.00</h1>
 						<div class="price-panel-text">
 							<div class="in-stock">In Stock</div>
 							<div>+$12.90 P&H</div>
 						</div>
-						<div class="button add-to-cart"><b>+</b> Add to Cart</div>
-						<div class="button ignore-item"><b>X</b> Ignore Item</div>
+						<div id="butter-add" class="button add-to-cart" onclick="buyItem('butter')"><b>+</b> Add to Cart</div>
+						<div id="butter-ignore" class="button ignore-item" onclick="ignoreItem('butter')"><b>X</b> Ignore Item</div>
 						<div class="rating-range-container">
 							<b>3.8 / 5</b> from 11 ratings:
 							<div class="rating-range">

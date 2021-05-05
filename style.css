@@ -31,9 +31,11 @@ hr {
 	box-sizing: border-box;
 	background-color: var(--theme-light);
 	cursor: pointer;
-	transition: filter 100ms ease;
 	text-align: center;
 	user-select: none;
+	transition-property: background-color, color, filter;
+	transition-duration: 100ms;
+	transition-timing-function: ease;
 }
 .button:hover {
 	filter: brightness(1.25);
@@ -45,6 +47,7 @@ hr {
 	box-shadow: 0 0 10px #0003;
 	border-radius: 10px;
 	overflow: hidden;
+	transition: box-shadow 100ms ease;
 }
 
 #navtop {
@@ -182,6 +185,8 @@ div.fake-text + div.fake-text {
 	transition-duration: 150ms;
 	transition-timing-function: ease;
 }
+.result-item.bought { box-shadow: 0 0 10px #0403, 0px -120px 120px -120px inset #0f04; }
+.result-item.ignored { box-shadow: 0 0 10px #4003, 0px -120px 120px -120px inset #f004; }
 .result-item:hover {
 	background-color: #fff;
 	color: #000;
@@ -294,6 +299,8 @@ iframe {
 	margin-top: 5px;
 	box-shadow: 0 2px 4px -2px #000;
 }
+.price-panel.bought { box-shadow: 0 0 10px #0403, 0px -300px 300px -300px inset #0f04, 0px 0px 0px 5px inset #0f0; }
+.price-panel.ignored { box-shadow: 0 0 10px #4003, 0px -300px 300px -300px inset #f004, 0px 0px 0px 5px inset #f008; }
 .price-panel-text {
 	font-size: 18px;
 	line-height: 22px;
@@ -307,6 +314,7 @@ iframe {
 }
 .add-to-cart { background-color: #5b5; }
 .ignore-item { background-color: #c55; }
+.add-to-cart.ignored, .ignore-item.bought { color: #aaa; background-color: #777; }
 .rating-range-container { margin-top: 5px; }
 .rating-range {
 	display: flex;
