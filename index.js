@@ -46,6 +46,9 @@ function buyItem(item) {
 		panel.classList.add("bought");
 		panel.classList.remove("ignored");
 		cart[item] = 1;
+		document.getElementById("item-count").innerHTML = getItemCount();
+		document.getElementById("cart-total").innerHTML = `$${totalCost().toFixed(2)}`;
+		document.getElementById(`cart-${item}`).style.display = "";
 	}
 }
 
@@ -68,6 +71,9 @@ function ignoreItem(item) {
 		panel.classList.remove("bought");
 		panel.classList.add("ignored");
 		cart[item] = 0;
+		document.getElementById("item-count").innerHTML = getItemCount();
+		document.getElementById("cart-total").innerHTML = `$${totalCost().toFixed(2)}`;
+		document.getElementById(`cart-${item}`).style.display = "none";
 	}
 }
 
@@ -88,4 +94,30 @@ function toggleCart() {
 		cartContainer.classList.add("active");
 		document.body.classList.add("cart-active");
 	}
+}
+
+/**
+ * Updates the shopping cart item count.
+ */
+function getItemCount() {
+	let sum = 0;
+	if (cart.fushigi !== -1) sum += cart.fushigi;
+	if (cart.tracy !== -1) sum += cart.tracy;
+	if (cart.nivea !== -1) sum += cart.nivea;
+	if (cart.frosted !== -1) sum += cart.frosted;
+	if (cart.butter !== -1) sum += cart.butter;
+	return sum;
+}
+
+/**
+ * Gets the total cost of all items in shopping cart.
+ */
+function totalCost() {
+	let sum = 0;
+	if (cart.fushigi !== -1) sum += 19.99 * cart.fushigi;
+	if (cart.tracy !== -1) sum += 79.99 * cart.tracy;
+	if (cart.nivea !== -1) sum += 12.97 * cart.nivea;
+	if (cart.frosted !== -1) sum += 2.88 * cart.frosted;
+	if (cart.butter !== -1) sum += 22.90 * cart.butter;
+	return sum;
 }
