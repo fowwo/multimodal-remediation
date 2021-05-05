@@ -439,5 +439,6 @@ iframe {
 #grand-total {
 	font-size: 100px;
 	line-height: 70px;
-	color: #070;
+	color: #0c0;
+	text-shadow: 0 -2px 0px #0e0, 0 2px 0px #050, 0px 5px 10px #050;
 }
