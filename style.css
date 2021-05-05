@@ -377,6 +377,17 @@ iframe {
 .shopping-cart-item {
 	display: flex; 
 }
+.shopping-cart-item + .shopping-cart-item {
+	margin-top: 5px; 
+}
+.shopping-cart-item .button {
+	flex-shrink: 0;
+	margin-right: 5px;
+	width: 28px;
+	border-radius: 10px;
+	background-color: #c55;
+	box-shadow: 0 2px 4px -2px #000;
+}
 .shopping-cart-item-name {
 	height: 28px;
 	text-overflow: ellipsis;
