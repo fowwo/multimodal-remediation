@@ -146,6 +146,7 @@ function checkoutReady() {
 	let proceed = document.getElementById("proceed");
 	proceed.classList.add("ready");
 	proceed.onclick = () => {
+		document.getElementById("grand-total").innerHTML = `$${totalCost().toFixed(2)}`;
 		switchScreen("screen-end");
 		toggleCart();
 		document.getElementById("shopping-cart").classList.remove("ready");

@@ -433,3 +433,11 @@ iframe {
 #proceed.ready:hover {
 	filter: brightness(1.25);
 }
+
+/* ------------------------------------------------------ */
+
+#grand-total {
+	font-size: 100px;
+	line-height: 70px;
+	color: #070;
+}
