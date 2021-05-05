@@ -6,6 +6,7 @@ var cart = {
 	frosted: -1,
 	butter: -1
 };
+let cartActive = false;
 
 /**
  * Switches the active screen.
@@ -67,5 +68,24 @@ function ignoreItem(item) {
 		panel.classList.remove("bought");
 		panel.classList.add("ignored");
 		cart[item] = 0;
+	}
+}
+
+/**
+ * Toggles the shopping cart interface.
+ */
+function toggleCart() {
+	let container = document.getElementById("container");
+	let cartContainer = document.getElementById("shopping-cart-container");
+	if (cartActive) {
+		cartActive = false;
+		container.classList.remove("cart-active");
+		cartContainer.classList.remove("active");
+		document.body.classList.remove("cart-active");
+	} else {
+		cartActive = true;
+		container.classList.add("cart-active");
+		cartContainer.classList.add("active");
+		document.body.classList.add("cart-active");
 	}
 }

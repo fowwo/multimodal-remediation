@@ -14,7 +14,9 @@ body {
 	font-size: 20px;
 	line-height: 25px;
 	overflow: hidden scroll;
+	transition: background-color 250ms ease;
 }
+body.cart-active { background-color: #666; }
 div {
 	width: 100%;
 }
@@ -70,6 +72,10 @@ hr {
 	display: flex;
 	justify-content: center;
 	flex-grow: 1;
+	transition: filter 250ms ease;
+}
+#container.cart-active {
+	filter: blur(5px) brightness(50%);
 }
 
 /* ------------------------------------------------------ */
@@ -347,3 +353,24 @@ iframe {
 	width: 35px;
 	flex-shrink: 0;
 }
+
+/* ------------------------------------------------------ */
+
+#shopping-cart-container {
+	position: absolute;
+	top: 120px;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	transition: background-color 250ms ease;
+}
+#shopping-cart-panel {
+	position: absolute;
+	top: 10px;
+	width: 380px;
+	border-radius: 10px 0 0 10px;
+	right: -400px;
+	transition: right 250ms ease;
+}
+#shopping-cart-container.active { width: 100%; }
+#shopping-cart-container.active #shopping-cart-panel { right: 0; }
