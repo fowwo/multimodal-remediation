@@ -482,6 +482,9 @@
 					</ul>
 				</div>
 			</div>
+			<div id="screen-end" class="screen" style="display: none; filter: opacity(0%);">
+				<span class="back-button" onclick="switchScreen('results')">< Back</span>
+			</div>
 		</div>
 		<div id="shopping-cart-container">	
 			<div id="shopping-cart-panel" class="box">
@@ -517,6 +520,8 @@
 					<div class="shopping-cart-item-name"><h2>Total</h2></div>
 					<div id="shopping-cart-total"><h2 id="cart-total">$0.00</h2></div>
 				</div>
+				<div id="proceed-message" style="margin-bottom: 5px; color: #c00;">* Please add or ignore the remaining items.</div>
+				<div id="proceed" class="button">Buy</div>
 			</div>
 		</div>
 		<script src="index.js"></script>

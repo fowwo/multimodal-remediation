@@ -49,6 +49,8 @@ function buyItem(item) {
 		document.getElementById("item-count").innerHTML = getItemCount();
 		document.getElementById("cart-total").innerHTML = `$${totalCost().toFixed(2)}`;
 		document.getElementById(`cart-${item}`).style.display = "";
+
+		if (allChecked()) checkoutReady();
 	}
 }
 
@@ -74,6 +76,8 @@ function ignoreItem(item) {
 		document.getElementById("item-count").innerHTML = getItemCount();
 		document.getElementById("cart-total").innerHTML = `$${totalCost().toFixed(2)}`;
 		document.getElementById(`cart-${item}`).style.display = "none";
+
+		if (allChecked()) checkoutReady();
 	}
 }
 
@@ -120,4 +124,29 @@ function totalCost() {
 	if (cart.frosted !== -1) sum += 2.88 * cart.frosted;
 	if (cart.butter !== -1) sum += 22.90 * cart.butter;
 	return sum;
+}
+
+/**
+ * Checks if every item is either added to the shopping cart
+ * or marked as ignored.
+ */
+function allChecked() {
+	return cart.fushigi !== -1 &&
+		cart.tracy !== -1 &&
+		cart.nivea !== -1 &&
+		cart.frosted !== -1 &&
+		cart.butter !== -1;
+}
+
+/**
+ * Handles all events to allow checkout.
+ */
+function checkoutReady() {
+	let proceed = document.getElementById("proceed");
+	proceed.classList.add("ready");
+	proceed.onclick = () => {
+		switchScreen("screen-end");
+		toggleCart();
+	};
+	document.getElementById("proceed-message").style.display = "none";
 }
