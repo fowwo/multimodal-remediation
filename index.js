@@ -15,7 +15,7 @@ var ended = false;
  */
 function switchScreen(screen) {
 	let e = document.getElementById(screen);
-	if (e) {
+	if (e && e !== activeScreen) {
 		activeScreen.style.filter = "opacity(0%)";
 		setTimeout(() => {
 			activeScreen.style.display = "none";
