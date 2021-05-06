@@ -147,6 +147,7 @@ function checkoutReady() {
 	proceed.classList.add("ready");
 	proceed.onclick = () => {
 		document.getElementById("grand-total").innerHTML = `$${totalCost().toFixed(2)}`;
+		setEndText();
 		switchScreen("screen-end");
 		toggleCart();
 		document.getElementById("shopping-cart").classList.remove("ready");
@@ -154,4 +155,20 @@ function checkoutReady() {
 	};
 	document.getElementById("proceed-message").style.display = "none";
 	if(!ended) document.getElementById("shopping-cart").classList.add("ready");
+}
+
+/**
+ * Sets the end screen text based on the total cost.
+ */
+function setEndText() {
+	let cost = totalCost();
+	if (cost == 0) {
+		document.getElementById("grand-total-text").innerHTML = "You didn't feel like buying anything, but maybe that was for the better.";
+	} else if (getItemCount() == 1) {
+		document.getElementById("grand-total-text").innerHTML = "You found something to buy, but not everything was for you.";
+	} else if (getItemCount() == 5) {
+		document.getElementById("grand-total-text").innerHTML = "Woah! That's a lot of money!";
+	} else {
+		document.getElementById("grand-total-text").innerHTML = "You found a few things to buy, but not everything was for you.";
+	}
 }
