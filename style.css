@@ -17,6 +17,14 @@ body {
 	transition: background-color 250ms ease;
 }
 body.cart-active { background-color: #666; }
+a {
+	color: var(--theme-light);
+	font-weight: bold;
+	transition: filter 100ms ease;
+}
+a:hover {
+	filter: brightness(150%);
+}
 div {
 	width: 100%;
 }
@@ -28,6 +36,17 @@ h2 {
 }
 hr {
 	margin: 20px 0;
+}
+p {
+	margin: 40px;
+}
+p.left {
+	text-align: left;
+	margin-right: 150px;
+}
+p.right {
+	text-align: right;
+	margin-left: 150px;
 }
 .button {
 	box-sizing: border-box;
