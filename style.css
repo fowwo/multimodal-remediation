@@ -228,13 +228,23 @@ div.fake-text + div.fake-text {
 }
 .result-item-icon-container {
 	flex-shrink: 0;
+	margin-left: 10px;
 	width: 130px;
 	height: 130px;
+}
+.result-item-icon-container img {
+	width: 100%;
+	height: 100%;
+	opacity: 65%;
+	transition: opacity 150ms ease;
+}
+.result-item:hover .result-item-icon-container img {
+	opacity: 100%;
 }
 .result-item-text-container {
 	box-sizing: border-box;
 	padding: 10px;
-	max-width: calc(100% - 130px);
+	max-width: calc(100% - 140px);
 	flex-grow: 1;
 }
 .result-item-name {
